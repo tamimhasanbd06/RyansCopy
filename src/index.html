@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RYANS | Trusted. Computer, Accessories Shop!</title>
+  <link rel="icon" type="image/png" href="imgs/logo.png">
 
   <!-- Tailwind CSS -->
   <link href="./output.css" rel="stylesheet" />
 
   <!-- Font Awesome -->
-  <link 
-    rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
-  />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
-<body class=" bg-amber-50">
+
+<body class=" bg-[#F2F2F2]">
 
   <!-- HEADER -->
   <header>
@@ -23,101 +24,122 @@
       <div class="flex justify-center">
         <ul class="flex py-2">
           <li class="pr-7 hover:text-amber-400"><a href="#"><i class="fa-solid fa-phone"></i> 16810</a></li>
-          <li class="pr-7 hover:text-amber-400"><a href="#"><i class="fa-regular fa-envelope text-green-600"></i> info@ryans.com</a></li>
-          <li class="pr-7 hover:text-amber-400"><a href="#"><i class="fa-solid fa-box text-amber-400"></i> Offer</a></li>
-          <li class="pr-7 hover:text-amber-400"><a href="#"><i class="fa-solid fa-cart-shopping text-amber-400"></i> New Arrival</a></li>
-          <li class="pr-7 hover:text-amber-400"><a href="#"><i class="fa-solid fa-user text-amber-400"></i> Customer Service</a></li>
+          <li class="pr-7 hover:text-amber-400"><a href="#"><i class="fa-regular fa-envelope text-green-600"></i>
+              info@ryans.com</a></li>
+          <li class="pr-7 hover:text-amber-400"><a href="#"><i class="fa-solid fa-box text-amber-400"></i> Offer</a>
+          </li>
+          <li class="pr-7 hover:text-amber-400"><a href="#"><i class="fa-solid fa-cart-shopping text-amber-400"></i> New
+              Arrival</a></li>
+          <li class="pr-7 hover:text-amber-400"><a href="#"><i class="fa-solid fa-user text-amber-400"></i> Customer
+              Service</a></li>
         </ul>
       </div>
 
-      
+
       <!-- Search Bar -->
       <div class="flex justify-between items-center ">
         <!-- Logo -->
         <div>
           <a href="https://www.ryans.com/">
-            <img src="/Screenshot (4).png" class="absolute top-2.5 left-10 w-50  h-auto" alt="Ryans Logo">
+            <img src="imgs/Screenshot (4).png" class="absolute top-2.5 left-10 w-50  h-auto" alt="Ryans Logo">
           </a>
         </div>
-        
-        <form 
-          class="flex items-center gap-2" 
-          role="search" 
+
+
+        <form class="flex items-center gap-2" role="search"
           onsubmit="event.preventDefault(); alert('Search: ' + this.querySelector('input').value)">
           <label for="q" class="sr-only">Search</label>
-          <input 
-            id="q"
-            name="q"
-            type="search"
-            placeholder="Enter your keyword..."
-            class="bg-white mt-5 text-black w-64 md:w-96 px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:border-black"
-          >
-          <button type="submit" class="px-4 py-2 mt-5 rounded-md bg-green-600 text-white hover:text-black focus:outline-none focus:ring-2">
+          <input id="q" name="q" type="search" placeholder="Enter your keyword..."
+            class="bg-white mt-5 text-black w-64 md:w-96 px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:border-black">
+          <button type="submit"
+            class="px-4 py-2 mt-5 rounded-md bg-green-600 text-white hover:text-black focus:outline-none focus:ring-2">
             <i class="fa-solid fa-magnifying-glass text-gray-400"></i>
           </button>
         </form>
+
+
         <!-- Department Dropdown -->
         <div class="flex justify-end mr-10 mt-2 pb-">
-          <select id="builder" class="px-3 py-2 rounded-md border border-amber-400 text-amber-400 hover:text-white focus:outline-none focus:ring-2">
+          <select id="builder"
+            class="px-3 py-2 rounded-md border border-amber-400 text-amber-400 hover:text-white focus:outline-none focus:ring-2">
             <option class="text-black">SYSTEM Builder</option>
             <option class="text-black">PC Builder</option>
             <option class="text-black">CC Builder</option>
           </select>
         </div>
 
-      </div>
 
+        <div class="flex justify-center">
+          <ul class="flex">
+            <li><a href=""><i class="fa-utility fa-semibold fa-cart-shopping" style="color: #FFD43B;"></i></a></li>
+            <li><a href=""><i class="fa-utility-fill fa-semibold fa-heart" style="color: #FFD43B;"></i></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""><i class="fa-utility-duo fa-semibold fa-circle-user"
+                  style="--fa-primary-color: #6bc92c; --fa-secondary-color: #1b2018;"></i></a></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
-    
+
     <!-- Main Nav -->
-<div class="font-bold text-lg">
-  <nav class="bg-black shadow-2xl">
-    <ul class="flex flex-wrap items-center justify-center">
-      <li class="relative group">
-        <a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">
-          <i class="fa-solid fa-house"></i>
-        </a>
-      </li>
+    <div class="font-bold text-lg">
+      <nav class="bg-black shadow-2xl">
+        <ul class="flex flex-wrap items-center justify-center">
+          <li class="relative group">
+            <a href="http://127.0.0.1:5500/src/index.html" class="block py-3 px-4 text-white hover:bg-amber-400">
+              <i class="fa-solid fa-house"></i>,
+              
+            </a>
+          </li>
 
-      <li class="relative group">
-        <a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Laptop</a>
-        <ul class="absolute left-0 top-full hidden group-hover:block bg-gray-700 text-white w-48">
-          <li class="hover:bg-cyan-900"><a href="#" class="block px-4 py-2">All Laptop</a></li>
-          <li class="hover:bg-cyan-900"><a href="#" class="block px-4 py-2">Acer</a></li>
-          <li class="hover:bg-cyan-900"><a href="#" class="block px-4 py-2">Apple</a></li>
-          <li class="hover:bg-cyan-900"><a href="#" class="block px-4 py-2">Asus</a></li>
-          <li class="hover:bg-cyan-900"><a href="#" class="block px-4 py-2">Chuwi</a></li>
-          <li class="hover:bg-cyan-900"><a href="#" class="block px-4 py-2">Dell</a></li>
-          <li class="hover:bg-cyan-900"><a href="#" class="block px-4 py-2">Gigabyte</a></li>
-          <li class="hover:bg-cyan-900"><a href="#" class="block px-4 py-2">HP</a></li>
-          <li class="hover:bg-cyan-900"><a href="#" class="block px-4 py-2">Lenovo</a></li>
-          <li class="hover:bg-cyan-900"><a href="#" class="block px-4 py-2">Microsoft</a></li>
+
+          <li class="relative group">
+            <a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Laptop</a>
+            <ul class="absolute left-0 top-full hidden group-hover:block bg-gray-700 text-white w-48">
+              <li class="hover:bg-cyan-900"><a href="#" class="block px-4 py-2">All Laptop</a></li>
+              <li class="hover:bg-cyan-900"><a href="#" class="block px-4 py-2">Acer</a></li>
+              <li class="hover:bg-cyan-900"><a href="#" class="block px-4 py-2">Apple</a></li>
+              <li class="hover:bg-cyan-900"><a href="#" class="block px-4 py-2">Asus</a></li>
+              <li class="hover:bg-cyan-900"><a href="#" class="block px-4 py-2">Chuwi</a></li>
+              <li class="hover:bg-cyan-900"><a href="#" class="block px-4 py-2">Dell</a></li>
+              <li class="hover:bg-cyan-900"><a href="#" class="block px-4 py-2">Gigabyte</a></li>
+              <li class="hover:bg-cyan-900"><a href="#" class="block px-4 py-2">HP</a></li>
+              <li class="hover:bg-cyan-900"><a href="#" class="block px-4 py-2">Lenovo</a></li>
+              <li class="hover:bg-cyan-900"><a href="#" class="block px-4 py-2">Microsoft</a></li>
+            </ul>
+          </li>
+
+
+          <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Desktop and
+              Server</a></li>
+          <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Gaming</a></li>
+          <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Monitor</a></li>
+          <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Tablet PC</a>
+          </li>
+          <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Printer</a></li>
+          <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Camera</a></li>
+          <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Security</a></li>
+          <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Network</a></li>
+          <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Sound</a></li>
+          <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Office Items</a>
+          </li>
+          <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Accessories</a>
+          </li>
+          <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Software</a></li>
+          <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Gadget</a></li>
+          <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Appliances</a>
+          </li>
+          <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Store</a></li>
         </ul>
-      </li>
+      </nav>
+    </div>
 
-      <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Desktop and Server</a></li>
-      <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Gaming</a></li>
-      <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Monitor</a></li>
-      <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Tablet PC</a></li>
-      <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Printer</a></li>
-      <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Camera</a></li>
-      <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Security</a></li>
-      <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Network</a></li>
-      <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Sound</a></li>
-      <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Office Items</a></li>
-      <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Accessories</a></li>
-      <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Software</a></li>
-      <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Gadget</a></li>
-      <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Appliances</a></li>
-      <li class="relative group"><a href="#" class="block py-3 px-4 text-white hover:bg-amber-400">Store</a></li>
-    </ul>
-  </nav>
-</div>
 
   </header>
+  </div>
 
-    </div>
+
   <!-- Banner Images -->
   <div class="flex mt-5 ml-4">
     <div class="bg-white">
@@ -129,6 +151,7 @@
     </div>
   </div>
 
+
   <!-- Text Bar -->
   <div class="flex justify-center bg-white my-1.5 py-2.5">
     <ul class="flex items-center text-green-600 font-bold gap-x-4 space-x-10">
@@ -139,6 +162,7 @@
     </ul>
   </div>
 
+
   <!-- Top Categories Section -->
   <section class="bg-white mt-6 ml-14">
     <div class="border-b-2 border-black">
@@ -146,735 +170,1189 @@
         <span class="inline-block skew-x-[15deg]">Top Categories</span>
       </div>
     </div>
+  </section>
+
+
+  <div class="flex justify-center bg-white h-20">
+    <ul class="flex flex-wrap font-bold space-x-8 md:space-x-20 py-3">
+      <li><a href="#" class="block text-black hover:text-amber-600"><img src="imgs/img28.png" alt="" class="w-10 h-10">
+          Laptop</a></li>
+      <li><a href="#" class="block text-black hover:text-amber-600"><img src="imgs/img29.png" alt="" class="w-10 h-10">
+          Processor</a></li>
+      <li><a href="#" class="block text-black hover:text-amber-600"><img src="imgs/img30.png" alt="" class="w-10 h-10">
+          AIO PC</a></li>
+      <li><a href="#" class="block text-black hover:text-amber-600"><img src="imgs/img31.png" alt="" class="w-10 h-10">
+          Speaker</a></li>
+      <li><a href="#" class="block text-black hover:text-amber-600"><img src="imgs/img32.png" alt="" class="w-10 h-10">
+          Monitor</a></li>
+      <li><a href="#" class="block text-black hover:text-amber-600"><img src="imgs/img36.png " alt="" class="w-10 h-10">
+          Software</a></li>
+      <li><a href="#" class="block text-black hover:text-amber-600"><img src="imgs/img34.png" alt="" class="w-10 h-10">
+          Gaming</a></li>
+      <li><a href="#" class="block text-black hover:text-amber-600"><img src="imgs/img35.png" alt="" class="w-10 h-10">
+          Printer</a></li>
+      <li><a href="#" class="block text-black hover:text-amber-600"><img src="imgs/img37.png" alt="" class="w-10 h-10 ">
+          GPU</a></li>
+      <li><a href="#" class="block text-black hover:text-amber-600"><img src="imgs/img38.png" alt="" class="w-10 h-10">
+          Camera</a></li>
+    </ul>
+  </div>
+
+
+  <!-- Collections Section -->
+  <section class="mt-10  ml-15 mr-7">
+    <div class="border-b-2 border-black">
+      <div class="inline-block bg-black text-white font-black relative pr-10 py-2 pl-5 skew-x-[-30deg]">
+        <span class="inline-block skew-x-[15deg]">Collections</span>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 mt-6 px-4">
+
+
+    <!-- Product 1 -->
+    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col   ">
+      <div class="w-full h-60 overflow-hidden">
+        <a href="#">
+          <img src="imgs/img5.png" alt="Starlink Mini Kit"
+            class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+        </a>
+      </div>
+      <div class="p-3 text-center">
+        <div class="text-black font-bold text-xl hover:text-blue-700">Starlink</div>
+        <div class="text-lg mt-1">Starlink Mini Kit</div>
+        <div class="flex justify-center space-x-2 pt-2">
+          <div class="font-bold">Tk 23,850</div>
+          <div class="font-bold line-through opacity-50">Tk 26,500</div>
+        </div>
+        <div class="font-bold text-blue-700"></div>
+      </div>
+    </div>
+
+
+    <!-- Product 2 -->
+    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col ml-">
+      <div class="w-full h-60 overflow-hidden">
+        <a href="#">
+          <img src="imgs/img6.png" alt="Wiwu SW07 Gold Smartwatch"
+            class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
+        </a>
+      </div>
+      <div class="p-3 text-center">
+        <div class="text-black font-bold text-xl hover:text-blue-700">Smartwatch</div>
+        <div class="text-lg mt-1">Wiwu SW07 Gold Bluetooth <br> Calling Smart Watch</div>
+        <div class="flex justify-center space-x-2 pt-2">
+          <div class="font-bold">Tk 3,000</div>
+        </div>
+        <div class="font-bold text-blue-700"></div>
+      </div>
+    </div>
+
+
+    <!-- Product 3 -->
+    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
+      <div class="w-full h-60 overflow-hidden">
+        <a href="#">
+          <img src="imgs/img7.png" alt="HP Keyboard"
+            class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+        </a>
+      </div>
+      <div class="p-3 text-center">
+        <div class="text-black font-bold text-xl hover:text-blue-700">Keyboard</div>
+        <div class="text-lg mt-1">HP</div>
+        <div class="flex justify-center space-x-2 pt-2">
+          <div class="font-bold">Tk 1,150</div>
+          <div class="font-bold line-through opacity-50">Tk 1,500</div>
+        </div>
+        <div class="font-bold text-blue-700"></div>
+      </div>
+    </div>
+
+
+    <!-- Product 4 -->
+    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
+      <div class="w-full h-60 overflow-hidden">
+        <a href="#">
+          <img src="imgs/img8.jpg" alt="Teclast T65 Tablet"
+            class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+        </a>
+      </div>
+      <div class="p-3 text-center">
+        <div class="text-black font-bold text-xl hover:text-blue-700">Tablet</div>
+        <div class="text-lg mt-1">Teclast T65 (LTE) 8GB RAM <br> 128GB ROM 13.4 inch</div>
+        <div class="flex justify-center space-x-2 pt-2">
+          <div class="font-bold">Tk 27,500</div>
+        </div>
+        <div class="font-bold text-blue-700"></div>
+      </div>
+    </div>
+
+
+    <!-- Product 5 -->
+    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
+      <div class="w-full h-60 overflow-hidden">
+        <a href="#">
+          <img src="imgs/img9.png" alt="HP Keyboard"
+            class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
+        </a>
+      </div>
+      <div class="p-3 text-center">
+        <div class="text-black font-bold text-xl hover:text-blue-700">Studio Mic</div>
+        <div class="text-lg mt-1">Maono DGM20 RGB <br> GomerWave Black Cendenner <br> USB</div>
+        <div class="flex justify-center space-x-2 pt-2">
+          <div class="font-bold">Tk 4,200</div>
+          <div class="font-bold line-through opacity-50"></div>
+        </div>
+        <div class="font-bold text-blue-700"></div>
+      </div>
+    </div>
+
+
+    <!-- Product 6 -->
+    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
+      <div class="w-full h-60 overflow-hidden">
+        <a href="#">
+          <img src="imgs/img10.png" alt="HP Keyboard"
+            class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+        </a>
+      </div>
+      <div class="p-3 text-center">
+        <div class="text-black font-bold text-xl hover:text-blue-700">Home Security</div>
+        <div class="text-lg mt-1">Ezviz HP4 Wire-Free Peephole <br> Smart Video Door ... </div>
+        <div class="flex justify-center space-x-2 pt-2">
+          <div class="font-bold">Tk 12,500</div>
+          <div class="font-bold line-through opacity-50"></div>
+        </div>
+        <div class="font-bold text-blue-700"></div>
+      </div>
+    </div>
+
+
+    <!-- Product 7 -->
+    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
+      <div class="w-full h-60 overflow-hidden">
+        <a href="#">
+          <img src="imgs/img11.png" alt="HP Keyboard"
+            class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
+        </a>
+      </div>
+      <div class="p-3 text-center">
+        <div class="text-black font-bold text-xl hover:text-blue-700">Car Charger </div>
+        <div class="text-lg mt-1">Ugreen EC602 (55212B) 60W <br> USB-A & USB-C Metal ... </div>
+        <div class="flex justify-center space-x-2 pt-2">
+          <div class="font-bold">Tk 2,300</div>
+          <div class="font-bold line-through opacity-50"></div>
+        </div>
+        <div class="font-bold text-blue-700"></div>
+      </div>
+    </div>
+
+
+    <!-- Product 8 -->
+    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
+      <div class="w-full h-60 overflow-hidden">
+        <a href="#">
+          <img src="imgs/img12.png" alt="HP Keyboard"
+            class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+        </a>
+      </div>
+      <div class="p-3 text-center">
+        <div class="text-black font-bold text-xl hover:text-blue-700"> Drone </div>
+        <div class="text-lg mt-1">DJI Mini 4 Pro Drone (With DJI <br> Rc2 and FIY Mo) ... </div>
+        <div class="flex justify-center space-x-2 pt-2">
+          <div class="font-bold">Tk 116,900</div>
+          <div class="font-bold line-through opacity-50"></div>
+        </div>
+        <div class="text-blue-700 font-bold">Save Tk 5,000 on online order</div>
+      </div>
+    </div>
+
+
+    <!-- Product 9 -->
+    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
+      <div class="w-full h-60 overflow-hidden">
+        <a href="#">
+          <img src="imgs/img13.png" alt="HP Keyboard"
+            class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+        </a>
+      </div>
+      <div class="p-3 text-center">
+        <div class="text-black font-bold text-xl hover:text-blue-700">Wi-Fi Router </div>
+        <div class="text-lg mt-1"> TP-Link Archer C6 V4.0 AC1200 <br> Mbps Gigabit Du ...</div>
+        <div class="flex justify-center space-x-2 pt-2">
+          <div class="font-bold">Tk 3,350</div>
+          <div class="font-bold line-through opacity-50"></div>
+        </div>
+        <div class="font-bold text-blue-700"></div>
+      </div>
+    </div>
+
+
+    <!-- Product 10 -->
+    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
+      <div class="w-full h-60 overflow-hidden">
+        <a href="#">
+          <img src="imgs/img14.png" alt="HP Keyboard"
+            class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
+        </a>
+      </div>
+      <div class="p-3 text-center">
+        <div class="text-black font-bold text-xl hover:text-blue-700"> Phone Case </div>
+        <div class="text-lg mt-1"> Belkin MSA022btCL <br> Transparent Protective Case ...</div>
+        <div class="flex justify-center space-x-2 pt-2">
+          <div class="font-bold">Tk 4,100</div>
+          <div class="font-bold line-through opacity-50"></div>
+        </div>
+        <div class="font-bold text-blue-700"></div>
+      </div>
+    </div>
+
+
+    <!-- Product 11 -->
+    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
+      <div class="w-full h-60 overflow-hidden">
+        <a href="#">
+          <img src="imgs/img15.png" alt="HP Keyboard"
+            class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
+        </a>
+      </div>
+      <div class="p-3 text-center">
+        <div class="text-black font-bold text-xl hover:text-blue-700"> Document & Book Scanner </div>
+        <div class="text-lg mt-1">CZUR Shine 800 A3 Pro Smart <br> Document & Book S ...
+
+        </div>
+        <div class="flex justify-center space-x-2 pt-2">
+          <div class="font-bold">Tk 18,000</div>
+          <div class="font-bold line-through opacity-50"></div>
+        </div>
+        <div class="font-bold text-blue-700"></div>
+      </div>
+    </div>
+
+
+    <!-- Product 12 -->
+    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
+      <div class="w-full h-60 overflow-hidden">
+        <a href="#">
+          <img src="imgs/img16.png" alt="HP Keyboard"
+            class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
+        </a>
+      </div>
+      <div class="p-3 text-center">
+        <div class="text-black font-bold text-xl hover:text-blue-700"> Projector </div>
+        <div class="text-lg mt-1">BenQ MX560 (4000 Lumens) <br> XGA Business </div>
+        <div class="flex justify-center space-x-2 pt-2">
+          <div class="font-bold">Tk 41,500</div>
+          <div class="font-bold line-through opacity-50"></div>
+        </div>
+        <div class="font-bold text-blue-700">Save Tk 500 on online order</div>
+      </div>
+    </div>
+
+
+    <!-- Product 13 -->
+    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
+      <div class="w-full h-60 overflow-hidden">
+        <a href="#">
+          <img src="imgs/img17.png" alt="HP Keyboard"
+            class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
+        </a>
+      </div>
+      <div class="p-3 text-center">
+        <div class="text-black font-bold text-xl hover:text-blue-700"> Monitor</div>
+        <div class="text-lg mt-1">Asus VY249HGR 23.8 Inch FHD <br> Display HDMI, VGA ...</div>
+        <div class="flex justify-center space-x-2 pt-2">
+          <div class="font-bold">Tk 15,000</div>
+          <div class="font-bold line-through opacity-50"></div>
+        </div>
+        <div class="font-bold text-blue-700"></div>
+      </div>
+    </div>
+
+
+    <!-- Product 14 -->
+    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
+      <div class="w-full h-60 overflow-hidden">
+        <a href="#">
+          <img src="imgs/img18.png" alt="HP Keyboard"
+            class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
+        </a>
+      </div>
+      <div class="p-3 text-center">
+        <div class="text-black font-bold text-xl hover:text-blue-700"> Power Station</div>
+        <div class="text-lg mt-1">Ecoflow River 3 245Wh 300W <br> Output Black & Gra ...</div>
+        <div class="flex justify-center space-x-2 pt-2">
+          <div class="font-bold">Tk 29,500</div>
+          <div class="font-bold line-through opacity-50"></div>
+        </div>
+        <div class="font-bold text-blue-700"></div>
+      </div>
+    </div>
+
+
+    <!-- Product 15 -->
+    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
+      <div class="w-full h-60 overflow-hidden">
+        <a href="#">
+          <img src="imgs/img19.png" alt="HP Keyboard"
+            class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
+        </a>
+      </div>
+      <div class="p-3 text-center">
+        <div class="text-black font-bold text-xl hover:text-blue-700"> Wi-Fi Camera</div>
+        <div class="text-lg mt-1"> Tenda CH9-WCA (4mm+6mm) <br> (3.0MP+3.0MP) Pan/Til ...</div>
+        <div class="flex justify-center space-x-2 pt-2">
+          <div class="font-bold">Tk 6,200</div>
+          <div class="font-bold line-through opacity-50"></div>
+        </div>
+        <div class="font-bold text-blue-700"></div>
+      </div>
+    </div>
+
+
+    <!-- Product 16 -->
+    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
+      <div class="w-full h-60 overflow-hidden">
+        <a href="#">
+          <img src="imgs/img20.png" alt="HP Keyboard"
+            class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
+        </a>
+      </div>
+      <div class="p-3 text-center">
+        <div class="text-black font-bold text-xl hover:text-blue-700"> Power Bank</div>
+        <div class="text-lg mt-1"> WIWU Wi-P049 10000mAh <br> Black 35W Charging Powe ...</div>
+        <div class="flex justify-center space-x-2 pt-2">
+          <div class="font-bold">Tk 2,900</div>
+          <div class="font-bold line-through opacity-50"></div>
+        </div>
+        <div class="font-bold text-blue-700"></div>
+      </div>
+    </div>
+
+
+    <!-- Product 17 -->
+    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
+      <div class="w-full h-60 overflow-hidden">
+        <a href="#">
+          <img src="imgs/img21.png" alt="HP Keyboard"
+            class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
+        </a>
+      </div>
+      <div class="p-3 text-center">
+        <div class="text-black font-bold text-xl hover:text-blue-700"> Phone Accessories</div>
+        <div class="text-lg mt-1"> Ugreen LP886 (45797) <br> Magnetic Cable Organizer ...</div>
+        <div class="flex justify-center space-x-2 pt-2">
+          <div class="font-bold">Tk 250</div>
+          <div class="font-bold line-through opacity-50"></div>
+        </div>
+        <div class="font-bold text-blue-700"></div>
+      </div>
+    </div>
+
+
+    <!-- Product 18 -->
+    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
+      <div class="w-full h-60 overflow-hidden">
+        <a href="#">
+          <img src="imgs/img22.png" alt="HP Keyboard"
+            class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
+        </a>
+      </div>
+      <div class="p-3 text-center">
+        <div class="text-black font-bold text-xl hover:text-blue-700"> Speaker</div>
+        <div class="text-lg mt-1"> Havit SK818BT Beige Mini <br> Portable Karaoke Blu ...</div>
+        <div class="flex justify-center space-x-2 pt-2">
+          <div class="font-bold">Tk 2,000</div>
+          <div class="font-bold line-through opacity-50"></div>
+        </div>
+        <div class="font-bold text-blue-700"></div>
+      </div>
+    </div>
+
+
+    <!-- Product 19 -->
+    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
+      <div class="w-full h-60 overflow-hidden">
+        <a href="#">
+          <img src="imgs/img23.png" alt="HP Keyboard"
+            class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
+        </a>
+      </div>
+      <div class="p-3 text-center">
+        <div class="text-black font-bold text-xl hover:text-blue-700"> UPS</div>
+        <div class="text-lg mt-1"> Baciap: 10 Menets ...</div>
+        <div class="flex justify-center space-x-2 pt-2">
+          <div class="font-bold">Tk 9,500</div>
+          <div class="font-bold line-through opacity-50"></div>
+        </div>
+        <div class="font-bold text-blue-700"></div>
+      </div>
+    </div>
+
+
+    <!-- Product 20 -->
+    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
+      <div class="w-full h-60 overflow-hidden">
+        <a href="#">
+          <img src="imgs/img24.png" alt="HP Keyboard"
+            class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
+        </a>
+      </div>
+      <div class="p-3 text-center">
+        <div class="text-black font-bold text-xl hover:text-blue-700"> Safe Box</div>
+        <div class="text-lg mt-1"> Deli ET580 Black Digital Safe <br> Box (Key, Passw) ... </div>
+        <div class="flex justify-center space-x-2 pt-2">
+          <div class="font-bold">Tk 21,500</div>
+          <div class="font-bold line-through opacity-50"></div>
+        </div>
+        <div class="font-bold text-blue-700"></div>
+      </div>
+    </div>
+
+
+    <!-- Product 21 -->
+    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
+      <div class="w-full h-60 overflow-hidden">
+        <a href="#">
+          <img src="imgs/img25.png" alt="HP Keyboard"
+            class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
+        </a>
+      </div>
+      <div class="p-3 text-center">
+        <div class="text-black font-bold text-xl hover:text-blue-700"> 3D Pro Joysstick</div>
+        <div class="text-lg mt-1">Logitech Extreme 3D Pro <br> Joystick (942-000008) </div>
+        <div class="flex justify-center space-x-2 pt-2">
+          <div class="font-bold">Tk 5,500</div>
+          <div class="font-bold line-through opacity-50"></div>
+        </div>
+        <div class="font-bold text-blue-700"></div>
+      </div>
+    </div>
+
+
+    <!-- Product 22 -->
+    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
+      <div class="w-full h-60 overflow-hidden">
+        <a href="#">
+          <img src="imgs/img26.png" alt="HP Keyboard"
+            class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
+        </a>
+      </div>
+      <div class="p-3 text-center">
+        <div class="text-black font-bold text-xl hover:text-blue-700"> Action Camera</div>
+        <div class="text-lg mt-1">DJI Osmo Pocket 3 Creator <br> Combo Black Action ... </div>
+        <div class="flex justify-center space-x-2 pt-2">
+          <div class="font-bold">Tk 69,000</div>
+          <div class="font-bold line-through opacity-50"></div>
+        </div>
+        <div class="font-bold text-blue-700"></div>
+      </div>
+    </div>
+
+
+    <!-- Product 23 -->
+    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
+      <div class="w-full h-60 overflow-hidden">
+        <a href="#">
+          <img src="imgs/img27.png" alt="HP Keyboard"
+            class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
+        </a>
+      </div>
+      <div class="p-3 text-center">
+        <div class="text-black font-bold text-xl hover:text-blue-700"> Mouse</div>
+        <div class="text-lg mt-1"> Logitech B175 Black Wireless <br> Mouse #910-00263 ...</div>
+        <div class="flex justify-center space-x-2 pt-2">
+          <div class="font-bold">Tk 795</div>
+          <div class="font-bold line-through opacity-50"></div>
+        </div>
+        <div class="font-bold text-blue-700"></div>
+      </div>
+    </div>
+
+
+    <!-- Product 24 -->
+    <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
+      <div class="w-full h-60 overflow-hidden">
+        <a href="#">
+          <img src="imgs/img28.png" alt="HP Keyboard"
+            class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
+        </a>
+      </div>
+      <div class="p-3 text-center">
+        <div class="text-black font-bold text-xl hover:text-blue-700"> Laptop</div>
+        <div class="text-lg mt-1">HP 15-fd0333TU Series 1 Intel <br> Core 5 120U 8GB ... </div>
+        <div class="flex justify-center space-x-2 pt-2">
+          <div class="font-bold">Tk 795</div>
+          <div class="font-bold line-through opacity-50"></div>
+        </div>
+        <div class="font-bold text-blue-700"></div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <div class="bg-white h-30   shadow-2xl">
+    <!-- Collections Section -->
+    <section class="mt-10  ml-15 mr-7">
+      <div class="border-b-2 border-black flex justify-between items-center">
+
+        <div class="inline-block bg-black text-white font-black relative pr-10 py-2 pl-5 skew-x-[-30deg] ">
+          <span class="inline-block skew-x-[15deg] ">Top Brauds</span>
+        </div>
+
+        <!-- link -->
+        <a href="#" class=" font-bold text-amber-500 text-md">
+          See all brands
+        </a>
+      </div>
     </section>
 
-    <div class="flex justify-center bg-white">
-      <ul class="flex flex-wrap font-bold space-x-8 md:space-x-20 py-3">
-        <li><a href="#" class="block text-black hover:text-amber-600">Processor</a></li>
-        <li><a href="#" class="block text-black hover:text-amber-600">AIO PC</a></li>
-        <li><a href="#" class="block text-black hover:text-amber-600">Speaker</a></li>
-        <li><a href="#" class="block text-black hover:text-amber-600">Monitor</a></li>
-        <li><a href="#" class="block text-black hover:text-amber-600">Software</a></li>
-        <li><a href="#" class="block text-black hover:text-amber-600">Gaming</a></li>
-        <li><a href="#" class="block text-black hover:text-amber-600">Printer</a></li>
-        <li><a href="#" class="block text-black hover:text-amber-600">GPU</a></li>
-        <li><a href="#" class="block text-black hover:text-amber-600">Camera</a></li>
+
+    <div class="flex justify-center text-2xl font-bold border-y-[1px] border-black">
+      <ul class="flex text-center divide-x divide-black space-x-20 space-y-10">
+        <li class="px-4 h-full"><a href="">Apple</a></li>
+        <li class="px-4 h-full"><a href="">Microsoft</a></li>
+        <li class="px-4 h-full"><a href="">Starlink</a></li>
+        <li class="px-4 h-full "><a href="">Hp</a></li>
+        <li class="px-4 h-full"><a href="">Asus</a></li>
+        <li class="px-4 h-full"><a href="">Dell</a></li>
+        <li class="px-4 h-full"><a href="">Lenovo</a></li>
+        <li class="px-4 h-full"><a href="">Acer</a></li>
+        <li class="px-4 h-full"><a href="">Intel</a></li>
+        <li class="px-4 h-full"><a href="">Amd</a></li>
+        <li class="px-4 h-full"><a href="">Msi</a></li>
       </ul>
     </div>
-  
 
-  <!-- Collections Section -->
-<section class="mt-10  ml-15 mr-7">
-  <div class="border-b-2 border-black">
-    <div class="inline-block bg-black text-white font-black relative pr-10 py-2 pl-5 skew-x-[-30deg]">
-      <span class="inline-block skew-x-[15deg]">Collections</span>
-    </div>
-  </div>
-</section>
 
- 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 mt-6 px-4">
+    <!-- Text and link -->
 
-      
-      <!-- Product 1 -->
-      <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col   ">
-        <div class="w-full h-60 overflow-hidden">
-          <a href="#">
-            <img src="imgs/img5.png" alt="Starlink Mini Kit" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
-          </a>
-        </div>
-        <div class="p-3 text-center">
-          <div class="text-black font-bold text-xl hover:text-blue-700">Starlink</div>
-          <div class="text-lg mt-1">Starlink Mini Kit</div>
-          <div class="flex justify-center space-x-2 pt-2">
-            <div class="font-bold">Tk 23,850</div>
-            <div class="font-bold line-through opacity-50">Tk 26,500</div>
-          </div>
-          <div class="font-bold text-blue-700"></div>
-        </div>
-      </div>
+    <div class="h-1200 bg-white mt-10 px-10 text-justify">
 
-      <!-- Product 2 -->
-      <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col ml-">
-        <div class="w-full h-60 overflow-hidden">
-          <a href="#">
-            <img src="imgs/img6.png" alt="Wiwu SW07 Gold Smartwatch" class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
-          </a>
-        </div>
-        <div class="p-3 text-center">
-          <div class="text-black font-bold text-xl hover:text-blue-700">Smartwatch</div>
-          <div class="text-lg mt-1">Wiwu SW07 Gold Bluetooth <br> Calling Smart Watch</div>
-          <div class="flex justify-center space-x-2 pt-2">
-            <div class="font-bold">Tk 3,000</div>
-          </div>
-          <div class="font-bold text-blue-700"></div>
-        </div>
-      </div>
 
-      <!-- Product 3 -->
-      <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
-        <div class="w-full h-60 overflow-hidden">
-          <a href="#">
-            <img src="imgs/img7.png" alt="HP Keyboard" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
-          </a>
-        </div>
-        <div class="p-3 text-center">
-          <div class="text-black font-bold text-xl hover:text-blue-700">Keyboard</div>
-          <div class="text-lg mt-1">HP</div>
-          <div class="flex justify-center space-x-2 pt-2">
-            <div class="font-bold">Tk 1,150</div>
-            <div class="font-bold line-through opacity-50">Tk 1,500</div>
-          </div>
-          <div class="font-bold text-blue-700"></div>
-        </div>
-      </div>
+      <!-- header -->
 
-      <!-- Product 4 -->
-      <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
-        <div class="w-full h-60 overflow-hidden">
-          <a href="#">
-            <img src="imgs/img8.jpg" alt="Teclast T65 Tablet" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
-          </a>
-        </div>
-        <div class="p-3 text-center">
-          <div class="text-black font-bold text-xl hover:text-blue-700">Tablet</div>
-          <div class="text-lg mt-1">Teclast T65 (LTE) 8GB RAM <br> 128GB ROM 13.4 inch</div>
-          <div class="flex justify-center space-x-2 pt-2">
-            <div class="font-bold">Tk 27,500</div>
-          </div>
-          <div class="font-bold text-blue-700"></div>
-        </div>
+      <div class="font-bold text-xl">
+        The Leading Retail and Online Shop for Computers, Laptops, Monitors &
+        Accessories in Bangladesh
       </div>
 
 
-       <!-- Product 5 -->
-       <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
-        <div class="w-full h-60 overflow-hidden">
-          <a href="#">
-            <img src="imgs/img9.png" alt="HP Keyboard" class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
-          </a>
-        </div>
-        <div class="p-3 text-center">
-          <div class="text-black font-bold text-xl hover:text-blue-700">Studio Mic</div>
-          <div class="text-lg mt-1">Maono DGM20 RGB <br> GomerWave Black Cendenner <br> USB</div>
-          <div class="flex justify-center space-x-2 pt-2">
-            <div class="font-bold">Tk 4,200</div>
-            <div class="font-bold line-through opacity-50"></div>
-          </div>
-          <div class="font-bold text-blue-700"></div>
-        </div>
-      </div>
-       
-
-
-     <!-- Product 6 -->
-       <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
-        <div class="w-full h-60 overflow-hidden">
-          <a href="#">
-            <img src="imgs/img10.png" alt="HP Keyboard" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
-          </a>
-        </div>
-        <div class="p-3 text-center">
-          <div class="text-black font-bold text-xl hover:text-blue-700">Home Security</div>
-          <div class="text-lg mt-1">Ezviz HP4 Wire-Free Peephole <br> Smart Video Door ... </div>
-          <div class="flex justify-center space-x-2 pt-2">
-            <div class="font-bold">Tk 12,500</div>
-            <div class="font-bold line-through opacity-50"></div>
-          </div>
-          <div class="font-bold text-blue-700"></div>
-        </div>
-      </div>
-
-
-<!-- Product 7 -->
-       <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
-        <div class="w-full h-60 overflow-hidden">
-          <a href="#">
-            <img src="imgs/img11.png" alt="HP Keyboard" class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
-          </a>
-        </div>
-        <div class="p-3 text-center">
-          <div class="text-black font-bold text-xl hover:text-blue-700">Car Charger </div>
-          <div class="text-lg mt-1">Ugreen EC602 (55212B) 60W <br> USB-A & USB-C Metal ... </div>
-          <div class="flex justify-center space-x-2 pt-2">
-            <div class="font-bold">Tk 2,300</div>
-            <div class="font-bold line-through opacity-50"></div>
-          </div>
-          <div class="font-bold text-blue-700"></div>
-        </div>
-      </div>
-
-
-
-        <!-- Product 8 --> 
-       <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
-        <div class="w-full h-60 overflow-hidden">
-          <a href="#">
-            <img src="imgs/img12.png" alt="HP Keyboard" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
-          </a>
-        </div>
-        <div class="p-3 text-center">
-          <div class="text-black font-bold text-xl hover:text-blue-700"> Drone </div>
-          <div class="text-lg mt-1">DJI Mini 4 Pro Drone (With DJI <br> Rc2 and FIY Mo) ... </div>
-          <div class="flex justify-center space-x-2 pt-2">
-            <div class="font-bold">Tk 116,900</div>
-           <div class="font-bold line-through opacity-50"></div>
-          </div>
-           <div class="text-blue-700 font-bold">Save Tk 5,000 on online order</div>
-        </div>
-      </div>
-
-
-<!-- Product 9 -->
-       <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
-        <div class="w-full h-60 overflow-hidden">
-          <a href="#">
-            <img src="imgs/img13.png" alt="HP Keyboard" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
-          </a>
-        </div>
-        <div class="p-3 text-center">
-          <div class="text-black font-bold text-xl hover:text-blue-700">Wi-Fi Router </div>
-          <div class="text-lg mt-1"> TP-Link Archer C6 V4.0 AC1200 <br> Mbps Gigabit Du ...</div>
-          <div class="flex justify-center space-x-2 pt-2">
-            <div class="font-bold">Tk 3,350</div>
-            <div class="font-bold line-through opacity-50"></div>
-          </div>
-          <div class="font-bold text-blue-700"></div>
-        </div>
-      </div>
-
-
-
-<!-- Product 10 -->
-       <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
-        <div class="w-full h-60 overflow-hidden">
-          <a href="#">
-            <img src="imgs/img14.png" alt="HP Keyboard" class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
-          </a>
-        </div>
-        <div class="p-3 text-center">
-          <div class="text-black font-bold text-xl hover:text-blue-700"> Phone Case </div>
-          <div class="text-lg mt-1"> Belkin MSA022btCL <br> Transparent Protective Case ...</div>
-          <div class="flex justify-center space-x-2 pt-2">
-            <div class="font-bold">Tk 4,100</div>
-            <div class="font-bold line-through opacity-50"></div>
-          </div>
-          <div class="font-bold text-blue-700"></div>
-        </div>
-      </div>
-
-
-
-
-<!-- Product 11 -->
-       <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
-        <div class="w-full h-60 overflow-hidden">
-          <a href="#">
-            <img src="imgs/img15.png" alt="HP Keyboard" class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
-          </a>
-        </div>
-        <div class="p-3 text-center">
-          <div class="text-black font-bold text-xl hover:text-blue-700"> Document  & Book Scanner </div>
-          <div class="text-lg mt-1">CZUR Shine 800 A3 Pro Smart <br> Document & Book S ...
-
- </div>
-          <div class="flex justify-center space-x-2 pt-2">
-            <div class="font-bold">Tk 18,000</div>
-            <div class="font-bold line-through opacity-50"></div>
-          </div>
-          <div class="font-bold text-blue-700"></div>
-        </div>
-      </div>
-
-
-
-
-<!-- Product 12 -->
-       <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
-        <div class="w-full h-60 overflow-hidden">
-          <a href="#">
-            <img src="imgs/img16.png" alt="HP Keyboard" class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
-          </a>
-        </div>
-        <div class="p-3 text-center">
-          <div class="text-black font-bold text-xl hover:text-blue-700"> Projector </div>
-          <div class="text-lg mt-1">BenQ MX560 (4000 Lumens) <br> XGA Business </div>
-          <div class="flex justify-center space-x-2 pt-2">
-            <div class="font-bold">Tk 41,500</div>
-            <div class="font-bold line-through opacity-50"></div>
-          </div>
-          <div class="font-bold text-blue-700">Save Tk 500 on online order</div>
-        </div>
-      </div>
-
-
-
-<!-- Product 13 -->
-       <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
-        <div class="w-full h-60 overflow-hidden">
-          <a href="#">
-            <img src="imgs/img17.png" alt="HP Keyboard" class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
-          </a>
-        </div>
-        <div class="p-3 text-center">
-          <div class="text-black font-bold text-xl hover:text-blue-700"> Monitor</div>
-          <div class="text-lg mt-1">Asus VY249HGR 23.8 Inch FHD <br> Display HDMI, VGA ...</div>
-          <div class="flex justify-center space-x-2 pt-2">
-            <div class="font-bold">Tk 15,000</div>
-            <div class="font-bold line-through opacity-50"></div>
-          </div>
-          <div class="font-bold text-blue-700"></div>
-        </div>
-      </div>
-
-
-
-<!-- Product 14 -->
-       <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
-        <div class="w-full h-60 overflow-hidden">
-          <a href="#">
-            <img src="imgs/img18.png" alt="HP Keyboard" class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
-          </a>
-        </div>
-        <div class="p-3 text-center">
-          <div class="text-black font-bold text-xl hover:text-blue-700"> Power Station</div>
-          <div class="text-lg mt-1">Ecoflow River 3 245Wh 300W <br> Output Black & Gra ...</div>
-          <div class="flex justify-center space-x-2 pt-2">
-            <div class="font-bold">Tk 29,500</div>
-            <div class="font-bold line-through opacity-50"></div>
-          </div>
-          <div class="font-bold text-blue-700"></div>
-        </div>
-      </div>
-
-
-
-<!-- Product 15 -->
-       <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
-        <div class="w-full h-60 overflow-hidden">
-          <a href="#">
-            <img src="imgs/img19.png" alt="HP Keyboard" class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
-          </a>
-        </div>
-        <div class="p-3 text-center">
-          <div class="text-black font-bold text-xl hover:text-blue-700"> Wi-Fi Camera</div>
-          <div class="text-lg mt-1"> Tenda CH9-WCA (4mm+6mm) <br>  (3.0MP+3.0MP) Pan/Til ...</div>
-          <div class="flex justify-center space-x-2 pt-2">
-            <div class="font-bold">Tk 6,200</div>
-            <div class="font-bold line-through opacity-50"></div>
-          </div>
-          <div class="font-bold text-blue-700"></div>
-        </div>
-      </div>
-
-
-
-<!-- Product 16 -->
-       <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
-        <div class="w-full h-60 overflow-hidden">
-          <a href="#">
-            <img src="imgs/img20.png" alt="HP Keyboard" class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
-          </a>
-        </div>
-        <div class="p-3 text-center">
-          <div class="text-black font-bold text-xl hover:text-blue-700"> Power Bank</div>
-          <div class="text-lg mt-1"> WIWU Wi-P049 10000mAh <br> Black 35W Charging Powe ...</div>
-          <div class="flex justify-center space-x-2 pt-2">
-            <div class="font-bold">Tk 2,900</div>
-            <div class="font-bold line-through opacity-50"></div>
-          </div>
-          <div class="font-bold text-blue-700"></div>
-        </div>
-      </div>
-
-
-
-<!-- Product 17 -->
-       <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
-        <div class="w-full h-60 overflow-hidden">
-          <a href="#">
-            <img src="imgs/img21.png" alt="HP Keyboard" class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
-          </a>
-        </div>
-        <div class="p-3 text-center">
-          <div class="text-black font-bold text-xl hover:text-blue-700"> Phone Accessories</div>
-          <div class="text-lg mt-1"> Ugreen LP886 (45797) <br> Magnetic Cable Organizer ...</div>
-          <div class="flex justify-center space-x-2 pt-2">
-            <div class="font-bold">Tk 250</div>
-            <div class="font-bold line-through opacity-50"></div>
-          </div>
-          <div class="font-bold text-blue-700"></div>
-        </div>
-      </div>
-
-
-
-
-<!-- Product 18 -->
-       <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
-        <div class="w-full h-60 overflow-hidden">
-          <a href="#">
-            <img src="imgs/img22.png" alt="HP Keyboard" class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
-          </a>
-        </div>
-        <div class="p-3 text-center">
-          <div class="text-black font-bold text-xl hover:text-blue-700"> Speaker</div>
-          <div class="text-lg mt-1"> Havit SK818BT Beige Mini <br> Portable Karaoke Blu ...</div>
-          <div class="flex justify-center space-x-2 pt-2">
-            <div class="font-bold">Tk 2,000</div>
-            <div class="font-bold line-through opacity-50"></div>
-          </div>
-          <div class="font-bold text-blue-700"></div>
-        </div>
-      </div>
-
-
-
-<!-- Product 19 -->
-       <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
-        <div class="w-full h-60 overflow-hidden">
-          <a href="#">
-            <img src="imgs/img23.png" alt="HP Keyboard" class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
-          </a>
-        </div>
-        <div class="p-3 text-center">
-          <div class="text-black font-bold text-xl hover:text-blue-700"> UPS</div>
-          <div class="text-lg mt-1"> Baciap: 10 Menets  ...</div>
-          <div class="flex justify-center space-x-2 pt-2">
-            <div class="font-bold">Tk 9,500</div>
-            <div class="font-bold line-through opacity-50"></div>
-          </div>
-          <div class="font-bold text-blue-700"></div>
-        </div>
-      </div>
-
-
-
-<!-- Product 20 -->
-       <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
-        <div class="w-full h-60 overflow-hidden">
-          <a href="#">
-            <img src="imgs/img24.png" alt="HP Keyboard" class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
-          </a>
-        </div>
-        <div class="p-3 text-center">
-          <div class="text-black font-bold text-xl hover:text-blue-700"> Safe Box</div>
-          <div class="text-lg mt-1"> Deli ET580 Black Digital Safe <br> Box (Key, Passw) ... </div>
-          <div class="flex justify-center space-x-2 pt-2">
-            <div class="font-bold">Tk 21,500</div>
-            <div class="font-bold line-through opacity-50"></div>
-          </div>
-          <div class="font-bold text-blue-700"></div>
-        </div>
-      </div>
-
-
-
-
-<!-- Product 21 -->
-       <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
-        <div class="w-full h-60 overflow-hidden">
-          <a href="#">
-            <img src="imgs/img25.png" alt="HP Keyboard" class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
-          </a>
-        </div>
-        <div class="p-3 text-center">
-          <div class="text-black font-bold text-xl hover:text-blue-700"> 3D Pro Joysstick</div>
-          <div class="text-lg mt-1">Logitech Extreme 3D Pro <br> Joystick (942-000008)  </div>
-          <div class="flex justify-center space-x-2 pt-2">
-            <div class="font-bold">Tk 5,500</div>
-            <div class="font-bold line-through opacity-50"></div>
-          </div>
-          <div class="font-bold text-blue-700"></div>
-        </div>
-      </div>
-
-
-
-
-<!-- Product 22 -->
-       <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
-        <div class="w-full h-60 overflow-hidden">
-          <a href="#">
-            <img src="imgs/img26.png" alt="HP Keyboard" class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
-          </a>
-        </div>
-        <div class="p-3 text-center">
-          <div class="text-black font-bold text-xl hover:text-blue-700"> Action Camera</div>
-          <div class="text-lg mt-1">DJI Osmo Pocket 3 Creator <br> Combo Black Action ... </div>
-          <div class="flex justify-center space-x-2 pt-2">
-            <div class="font-bold">Tk 69,000</div>
-            <div class="font-bold line-through opacity-50"></div>
-          </div>
-          <div class="font-bold text-blue-700"></div>
-        </div>
-      </div>
-
-
-
-
-<!-- Product 23 -->
-       <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
-        <div class="w-full h-60 overflow-hidden">
-          <a href="#">
-            <img src="imgs/img27.png" alt="HP Keyboard" class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
-          </a>
-        </div>
-        <div class="p-3 text-center">
-          <div class="text-black font-bold text-xl hover:text-blue-700"> Mouse</div>
-          <div class="text-lg mt-1"> Logitech B175 Black Wireless <br> Mouse #910-00263 ...</div>
-          <div class="flex justify-center space-x-2 pt-2">
-            <div class="font-bold">Tk 795</div>
-            <div class="font-bold line-through opacity-50"></div>
-          </div>
-          <div class="font-bold text-blue-700"></div>
-        </div>
-      </div>
-
-
-
-<!-- Product 24 -->
-       <div class="bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
-        <div class="w-full h-60 overflow-hidden">
-          <a href="#">
-            <img src="imgs/img28.png" alt="HP Keyboard" class="w- h-full object-cover hover:scale-110 transition-transform duration-300">
-          </a>
-        </div>
-        <div class="p-3 text-center">
-          <div class="text-black font-bold text-xl hover:text-blue-700"> Laptop</div>
-          <div class="text-lg mt-1">HP 15-fd0333TU Series 1 Intel <br> Core 5 120U 8GB ... </div>
-          <div class="flex justify-center space-x-2 pt-2">
-            <div class="font-bold">Tk 795</div>
-            <div class="font-bold line-through opacity-50"></div>
-          </div>
-          <div class="font-bold text-blue-700"></div>
-        </div>
-      </div>
-
-
-  </div>
- 
-
-
-
-<div class="bg-white h-30   shadow-2xl">
-  <!-- Collections Section -->
-<section class="mt-10  ml-15 mr-7">
-  <div class="border-b-2 border-black flex justify-between items-center">
-    
-    <div class="inline-block bg-black text-white font-black relative pr-10 py-2 pl-5 skew-x-[-30deg] ">
-      <span class="inline-block skew-x-[15deg] ">Top Brauds</span>
-    </div>
-
-    <!-- link -->
-    <a href="#" class=" font-bold text-amber-500 text-md">
-      See all brands
-    </a>
-  </div>
-</section>
-  
-
-
-<div class="flex justify-center text-2xl font-bold border-y-[1px] border-black">
-  <ul class="flex text-center divide-x divide-black space-x-20 space-y-10">
-    <li class="px-4 py-"><a href="">Apple</a></li>
-    <li class="px-4"><a href="">Microsoft</a></li>
-    <li class="px-4"><a href="">Starlink</a></li>
-    <li class="px-4 h-full "><a href="">Hp</a></li>
-    <li class="px-4"><a href="">Asus</a></li>
-    <li class="px-4"><a href="">Dell</a></li>
-    <li class="px-4"><a href="">Lenovo</a></li>
-    <li class="px-4"><a href="">Acer</a></li>
-    <li class="px-4"><a href="">Intel</a></li>
-    <li class="px-4"><a href="">Amd</a></li>
-    <li class="px-4"><a href="">Msi</a></li>
-  </ul>
-</div>
-
-                                 <!-- Text and link -->
-
-
-<div class="h-400 bg-white mt-10 px-10">
-
-                                   <!-- header -->
-     <div class="font-bold text-xl">
-      The Leading Retail and Online Shop for Computers, Laptops, Monitors & 
-      Accessories in  Bangladesh
-     </div>
-
-     <div class="pt-5">
-      If you are looking for the best computer shop in Bangladesh, you have to 
-      consider Ryans Computers, as it is a pioneer computer shop and e-commerce
-      platform selling computers and IT products all over Bangladesh through its
-      branches and website. We provide a fast, secure, and convenient online 
-      shopping experience with a wide range of products, including
-        <a href="" class="text-blue-400 font-bold">laptops,  </a>
+      <div class="pt-5">
+        If you are looking for the best computer shop in Bangladesh, you have to
+        consider Ryans Computers, as it is a pioneer computer shop and e-commerce
+        platform selling computers and IT products all over Bangladesh through its
+        branches and website. We provide a fast, secure, and convenient online
+        shopping experience with a wide range of products, including
+        <a href="" class="text-blue-400 font-bold">laptops, </a>
         <a href="" class="text-blue-400 font-bold">desktop PCs,</a>
-      and essential desktop components such as
-        <a href="text-blue-400 font-bold" class="">processors,</a>   
+        and essential desktop components such as
+        <a href="text-blue-400 font-bold" class="">processors,</a>
         <a href="" class="text-blue-400 font-bold">RAM,</a>
         <a href="" class="text-blue-400 font-bold">graphics cards,</a>
         <a href="" class="text-blue-400 font-bold">motherboards, </a>
-      and
+        and
         <a href="" class="text-blue-400 font-bold"> power supplies.</a>
-      Our collection also covers
-        <a href=""class="text-blue-400 font-bold">office equipment</a>
+        Our collection also covers
+        <a href="" class="text-blue-400 font-bold">office equipment</a>
         <a href="" class="text-blue-400 font-bold">Printer</a>,(
-        <a href="" class="text-blue-400 font-bold" >Photocopier</a>,
-        <a href="" class="text-blue-400 font-bold" >Scanner</a>,
+        <a href="" class="text-blue-400 font-bold">Photocopier</a>,
+        <a href="" class="text-blue-400 font-bold">Scanner</a>,
         <a href="" class="text-blue-400 font-bold">Projector</a>),
         <a href="" class="text-blue-400 font-bold"> cameras,</a>
         <a href="" class="text-blue-400 font-bold">camera accessories, </a>
         <a href="" class="text-blue-400 font-bold">smart gadgets,</a>
         <a href="" class="text-blue-400 font-bold">home appliances,</a>
         <a href="" class="text-blue-400 font-bold"> networking items, </a>
-      and premium
+        and premium
         <a href="" class="text-blue-400 font-bold">sound systems</a>--
-      ensuring everything you need is just a click away. Now also providing
+        ensuring everything you need is just a click away. Now also providing
         <a href="" class="text-blue-400 font-bold"> Starlink internet kits </a>
-      for high-speed satellite connectivity. Ryans is always endeavoring to offer its
-      customers the best possible facility – including multiple payment options, EMI
-      Facility, best price, cash on delivery, delivery in 64 districts, free home 
-      delivery inside Dhaka, Chattogram, Khulna, Rajshahi, Rangpur, Bogura, Mymensingh
-      , Barishal, Sylhet metropolitan areas, and Jashore city corporation area, 24/7 
-      online support, and extensive customer service and warranty commitments.
-
-       <div class="mt-10">
-      Ryans Computers stays ahead of the curve by offering the latest technologies and
-      consistently stocking top brands such as Intel, AMD, ASUS, Gigabyte, Apple, and
-      many other leading names in the industry. We are proud to announce our recent 
-      partnership with the global leader “Starlink” to provide high-speed satellite
-      connectivity for uninterrupted global communication. Moreover, our vast
-      collection of PC components, laptops, desktops, peripherals, and gaming 
-      accessories is designed to serve the needs of students, professionals,
-      and dedicated gamers.
-      <a href="" class="text-blue-400 text-lg font-bold"> “Starlink”</a>
-
-      to provide high-speed satellite connectivity for uninterrupted global communication.
-      Moreover, our vast collection of PC components, laptops, desktops, peripherals, and
-      gaming accessories is designed to serve the needs of students, professionals, and 
-      dedicated gamers.
-
-   </div>
-
-
-  <div class="mt-10">
-      At RYANS Computers, the customer is always king. The company boasts a team of proficient 
-      professionals who are passionate about technology. They go above and beyond to guarantee
-      that each customer enjoys a seamless and customized shopping experience. Regardless of
-      whether you prefer to visit the physical store or shop online, you can rest assured
-      that RYANS Computers will assist you in finding the appropriate product that caters 
-      to your distinctive needs.
-  </div>
-
-<div class="text-2xl font-bold mt-10 ">
-Best After-Sales & Warranty Support
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
+        for high-speed satellite connectivity. Ryans is always endeavoring to offer its
+        customers the best possible facility – including multiple payment options, EMI
+        Facility, best price, cash on delivery, delivery in 64 districts, free home
+        delivery inside Dhaka, Chattogram, Khulna, Rajshahi, Rangpur, Bogura, Mymensingh
+        , Barishal, Sylhet metropolitan areas, and Jashore city corporation area, 24/7
+        online support, and extensive customer service and warranty commitments.
+
+
+        <div class="mt-10">
+          Ryans Computers stays ahead of the curve by offering the latest technologies and
+          consistently stocking top brands such as Intel, AMD, ASUS, Gigabyte, Apple, and
+          many other leading names in the industry. We are proud to announce our recent
+          partnership with the global leader “Starlink” to provide high-speed satellite
+          connectivity for uninterrupted global communication. Moreover, our vast
+          collection of PC components, laptops, desktops, peripherals, and gaming
+          accessories is designed to serve the needs of students, professionals,
+          and dedicated gamers.
+          <a href="" class="text-blue-400 text-lg font-bold"> “Starlink”</a>
+
+          to provide high-speed satellite connectivity for uninterrupted global communication.
+          Moreover, our vast collection of PC components, laptops, desktops, peripherals, and
+          gaming accessories is designed to serve the needs of students, professionals, and
+          dedicated gamers.
+        </div>
+
+
+        <div class="mt-10">
+          At RYANS Computers, the customer is always king. The company boasts a team of proficient
+          professionals who are passionate about technology. They go above and beyond to guarantee
+          that each customer enjoys a seamless and customized shopping experience. Regardless of
+          whether you prefer to visit the physical store or shop online, you can rest assured
+          that RYANS Computers will assist you in finding the appropriate product that caters
+          to your distinctive needs.
+        </div>
+
+
+        <div class="text-2xl font-bold mt-10 ">
+          Best After-Sales & Warranty Support
+        </div>
+
+
+        <div class=" mt-10">
+          Our aim is to ensure the best quality after-sales service and warranty support for our customers.
+          We are providing warranty and after-sales service from each of our branches. Anyone can get
+          after-sales service from any of our branches, no matter from which branch he or she purchased
+          the product.
+        </div>
+
+
+        <div class="font-bold text-2xl mt-10">
+          One-stop shop for Gaming PCs, Laptops and Components
+        </div>
+
+
+        <div class="mt-10">
+          If you're a gamer, you're probably always on the lookout for the best gear to take
+          your gaming experience to the next level. Here's the deal, if you're looking for
+          a trusted shop for all your gaming needs in Bangladesh, Ryans is the place to go to
+          find the best selection of gaming components in the country as we also sell gaming
+          PCs, and monitors.
+        </div>
+
+
+        <div class="mt-10">
+          Now, why should you choose Ryans over other retailers? RYANS Computers has built a solid
+          reputation as a Bangladesh tech retail and online shopping pioneer. What sets RYANS Computers
+          apart from other retailers is that they are super passionate about technology. They go above
+          and beyond to ensure that every customer enjoys a seamless and personalized shopping
+          experience. RYANS understands that buying tech products can be overwhelming, so they take
+          the time to understand customers' unique needs and help them find the right product to meet
+          them. And hats off to our excellent customer service and after-sales services. They also make
+          sure of competitive prices and special deals regularly. They believe in making tech products
+          accessible to everyone, offering customers financing options and flexible payment plans.
+        </div>
+
+
+        <div class="font-bold text-2xl mt-10">
+          Latest PC Building Components in Bangladesh
+        </div>
+
+
+        <div class="mt-10">
+          Are you looking for the best PC building components shop? RYANS Computers, Bangladesh's
+          leading computer component provider, offers an extensive assortment of cutting-edge PC
+          components that cater to the diverse requirements and financial constraints of tech
+          enthusiasts. Whether on a tight budget or seeking high-end solutions, RYANS Computers has
+          got you covered. We offer a wide selection of high-quality components, knowledgeable staff,
+          and an easy online ordering system for your convenience. Create your dream machine with RYANS
+          shop, Bangladesh's best PC building components store. Visit us today and achieve lightning
+          -fast performance, stunning visuals, and a build you can be proud of.
+        </div>
+
+
+        <div class="font-bold text-2xl mt-10">
+          Reliable computer accessories online shop in Bangladesh
+        </div>
+
+
+        <div class="mt-10">
+          Welcome to RYANS Computers, Bangladesh's leading online shop for computer accessories.
+          Our extensive collection of high-quality computer accessories includes everything from
+          mice and keyboards to printers, monitors, and more. At RYANS Computers, we are dedicated
+          to providing our customers with the best products at the most competitive prices.
+          Our user-friendly website makes it easy to find the perfect computer accessory for
+          your needs, and our fast and reliable shipping ensures that your order arrives
+          quickly and safely. Shop confidently at RYANS Computers as we sell the best quality
+          pc accessories and gadgets like Brand Desktop PC, Processor, Gaming Laptop, Monitors,
+          Smartwatch, DSLR Camera, Desktop Accessories, Printer, Photocopier, Scanner,
+          Projector, Server, Security System, CC Camera, IP Camera, Network Router, Access
+          Control, IP Phone Set from famous brands including HP, Canon, Dell, Toshiba, Brother,
+          Epson, Sharp, Casio, BenQ, Xiaomi, Samsung, Panasonic, etc.
+        </div>
+
+
+        <div class="font-bold text-2xl mt-10">
+          Largest Chain of Computer Stores in Bangladesh
+        </div>
+
+
+        <div class="mt-10">
+          Besides its online facility, Ryans offers the largest chain of computer stores in Bangladesh
+          with its branches available in Dhaka, Chattogram, Rajshahi, Khulna, Rangpur, and Barishal
+          divisions. We have stores at the most prominent IT market in Dhaka like BCS Computer City
+          (IDB Bhaban), Multiplan City Centre & Eastern Plus Shopping Complex. Moreover, two large
+          outlets are there at the Banani and Uttara locations in Dhaka. The largest store of Ryans
+          is in Agrabad, Chattogram which is the largest computer store in Bangladesh. In Chattogram
+          Ryans has another store at Younesco City Centre, GEC Circle, and Agrabad. Ryans Khulna
+          branch is the largest computer store in the Khulna division. Branches in Rangpur, Rajshahi,
+          Bogura, Barishal, and Mymensingh districts are also providing the same quality products
+          and services just like the branches in Dhaka.
+          <a href="" class="text-blue-400 font-bold"> View all our branch addresses</a>
+        </div>
+
+
+        <!-- Sturs -->
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-[30px] p-4 ">
+          <!-- Card 1 -->
+          <div class="border p-4">
+            <div class="font-bold mt-2">IDB BHABAN, DHAKA</div>
+            <div class="pl-1">
+              123/5 BCS Computer City, Agargaon <br>
+              Tel: +8809604442121 (Sales), +8801755513935 <br>
+              (Service)
+            </div>
+            <div class="font-bold text-blue-400 pl-1 mt-2">
+              <a href="">See in Map</a><br>
+              <a href="">Go for Branch details</a>
+            </div>
+          </div>
+
+
+          <!-- Card 2 -->
+
+          <div class="border p-4">
+            <div class="font-bold mt-2">BANANI, DHAKA</div>
+            <div class="pl-1">
+              41 Kamal Ataturk Avenue, Banani <br>
+              Tel: +8809638009072 (Sales), +8801755513933 <br>
+              (Service)
+            </div>
+            <div class="font-bold text-blue-400 pl-1 mt-2">
+              <a href="">See in Map</a><br>
+              <a href="">Go for Branch details</a>
+            </div>
+          </div>
+
+
+          <!-- Card 3 -->
+
+          <div class="border p-4">
+            <div class="font-bold mt-2">UTTARA-1, DHAKA</div>
+            <div class="pl-1">
+              36 Sonargaon Janapath (Beside Uttara Adhunik <br>
+              Medical College & Hospital), 1st Floor, Sector 9,<br>
+              Uttarabr <br>
+              Tel: +8801755513929 (Sales), +8801755513930 <br>
+              (Service)
+            </div>
+            <div class="font-bold text-blue-400 pl-1 mt-2">
+              <a href="">See in Map</a><br>
+              <a href="">Go for Branch details</a>
+            </div>
+          </div>
+
+
+          <!-- Card 4 -->
+
+          <div class="border p-4">
+            <div class="font-bold mt-2">UTTARA-2, DHAKA</div>
+            <div class="pl-1">
+              House Building, 11 Sonargaon Janapath, Sector <br>
+              7, Uttara Dhaka 1230 <br>
+              Tel: +8801313467629 (Sales), +8801313467630 <br>
+              (Service)
+            </div>
+            <div class="font-bold text-blue-400 pl-1 mt-2">
+              <a href="">See in Map</a><br>
+              <a href="">Go for Branch details</a>
+            </div>
+          </div>
+
+
+          <!-- Card 5 -->
+
+          <div class="border p-4">
+            <div class="font-bold mt-2">MULTIPLAN CENTRE-1 (MPL-1), DHAKA</div>
+            <div class="pl-1">
+              Shop 141, Ground Floor, Multiplan Centre 69/71 <br>
+              New Elephant Roadbr
+
+              Tel: +8801755513971 (Sales), +8801755513975 <br>
+              (Service)
+            </div>
+            <div class="font-bold text-blue-400 pl-1 mt-2">
+              <a href="">See in Map</a><br>
+              <a href="">Go for Branch details</a>
+            </div>
+          </div>
+
+
+          <!-- Card 6 -->
+
+          <div class="border p-4">
+            <div class="font-bold mt-2">MULTIPLAN CENTRE-2 (LEVEL 4), DHAKA</div>
+            <div class="pl-1">
+              Shop 401, Level 4, Multiplan Centre 69/71 <br>
+              New Elephant Road <br>
+              Tel: +8801755513981 (Sales), +8801755513985 <br>
+              (Service)
+            </div>
+            <div class="font-bold text-blue-400 pl-1 mt-2">
+              <a href="">See in Map</a><br>
+              <a href="">Go for Branch details</a>
+            </div>
+          </div>
+
+
+          <!-- Card 7 -->
+
+          <div class="border p-4">
+            <div class="font-bold mt-2">MULTIPLAN CENTRE-3 (LEVEL 4), DHAKA</div>
+            <div class="pl-1">
+              Shop 430, Level 4, Multiplan Centre 69/71 <br>
+              New Elephant Roadbr
+              Tel: +8801755554947 (Sales), +8801755513985 <br>
+              (Service)
+            </div>
+            <div class="font-bold text-blue-400 pl-1 mt-2">
+              <a href="">See in Map</a><br>
+              <a href="">Go for Branch details</a>
+            </div>
+          </div>
+
+
+          <!-- Card 8 -->
+
+          <div class="border p-4">
+            <div class="font-bold mt-2">SHANTINAGAR, DHAKA</div>
+            <div class="pl-1">
+              Shop 430, Level 4, Multiplan Centre 69/71 New <br>
+              Elephant Road <br>
+              Tel: +8801755554947 (Sales), +8801755513985 <br>
+              (Service)
+            </div>
+            <div class="font-bold text-blue-400 pl-1 mt-2">
+              <a href="">See in Map</a><br>
+              <a href="">Go for Branch details</a>
+            </div>
+          </div>
+
+
+          <!-- Card 9 -->
+
+          <div class="border p-4">
+            <div class="font-bold mt-2">SHANTINAGAR, DHAKA</div>
+            <div class="pl-1">
+              BCS Laptop Bazar, Shop 441- 444, Level 4, <br>
+              Eastern Plus Shopping Complex, 145 <br>
+              Shantinagar <br>
+              Tel: +8801755513983 (Sales), +8801755513984 <br>
+              (Service)
+            </div>
+            <div class="font-bold text-blue-400 pl-1 mt-2">
+              <a href="">See in Map</a><br>
+              <a href="">Go for Branch details</a>
+            </div>
+          </div>
+
+
+          <!-- Card 10 -->
+
+          <div class="border p-4">
+            <div class="font-bold mt-2">ROKEYA SHARANI, DHAKA</div>
+            <div class="pl-1">
+              Kusholi Bhaban, Ground Floor, 238/1 Begum <br>
+              Rokeya Sharani, Taltola, Agargaon, Dhaka-1207 <br>
+              Tel: +8801755513903 (Sales), +8809604442121 <br>
+              (Service)
+            </div>
+            <div class="font-bold text-blue-400 pl-1 mt-2">
+              <a href="">See in Map</a><br>
+              <a href="">Go for Branch details</a>
+            </div>
+          </div>
+
+
+          <!-- Card 11 -->
+
+          <div class="border p-4">
+            <div class="font-bold mt-2">AGRABAD, CHATTOGRAM</div>
+            <div class="pl-1">
+              472 Sheikh Mujib Road Chowmuhani, Agrabad, <br>
+              Chattogram <br>
+              Tel: +8801755554929 (Sales), +8801755554930 <br>
+              (Service)
+            </div>
+            <div class="font-bold text-blue-400 pl-1 mt-2">
+              <a href="">See in Map</a><br>
+              <a href="">Go for Branch details</a>
+            </div>
+          </div>
+
+
+          <!-- Card 12 -->
+
+          <div class="border p-4">
+            <div class="font-bold mt-2">YUNUSCO CENTRE, CHATTOGRAM</div>
+            <div class="pl-1">
+              Shop 440-446 Yunusco City Centre, Level 4, GEC <br>
+              Circle, Chattogram <br>
+              Tel: +8801755513950 (Sales), +8801755513953 <br>
+              (Service)
+            </div>
+            <div class="font-bold text-blue-400 pl-1 mt-2">
+              <a href="">See in Map</a><br>
+              <a href="">Go for Branch details</a>
+            </div>
+          </div>
+
+
+          <!-- Card 13 -->
+
+          <div class="border p-4">
+            <div class="font-bold mt-2">KHULNA</div>
+            <div class="pl-1">
+              1st Floor, Naushin Tower, 11 K D A Avenue, <br>
+              Khulna <br>
+              Tel: +8801755554922 (Sales), +8801755554923 <br>
+              (Service)
+            </div>
+            <div class="font-bold text-blue-400 pl-1 mt-2">
+              <a href="">See in Map</a><br>
+              <a href="">Go for Branch details</a>
+            </div>
+          </div>
+
+
+          <!-- Card 14 -->
+
+          <div class="border p-4">
+            <div class="font-bold mt-2">RAJSHAHI</div>
+            <div class="pl-1">
+              96 Jamal Super Market, Shaheb Bazar, Rajshahi <br>
+              Tel: +8801755513958 (Sales), +8801755513961 <br>
+              (Service)
+            </div>
+            <div class="font-bold text-blue-400 pl-1 mt-2">
+              <a href="">See in Map</a><br>
+              <a href="">Go for Branch details</a>
+            </div>
+          </div>
+
+
+          <!-- Card 15 -->
+
+          <div class="border p-4">
+            <div class="font-bold mt-2">RANGPUR</div>
+            <div class="pl-1">
+              624 Asha Centre, GL Roy Road, Rangpur <br>
+              Tel: +8801755513938 (Sales), +8801755513941 <br>
+              (Service)
+            </div>
+            <div class="font-bold text-blue-400 pl-1 mt-2">
+              <a href="">See in Map</a><br>
+              <a href="">Go for Branch details</a>
+            </div>
+          </div>
+
+
+          <!-- Card 16 -->
+
+          <div class="border p-4">
+            <div class="font-bold mt-2">BOGURA</div>
+            <div class="pl-1">
+              845/936 College Road, Kalitola, Bogura <br>
+              Tel: +8801755513946 (Sales), +8801755513949 <br>
+              (Service)
+            </div>
+            <div class="font-bold text-blue-400 pl-1 mt-2">
+              <a href="">See in Map</a><br>
+              <a href="">Go for Branch details</a>
+            </div>
+          </div>
+
+
+          <!-- Card 17 -->
+
+          <div class="border p-4">
+            <div class="font-bold mt-2">BARISHAL</div>
+            <div class="pl-1">
+              125 Sadar Road, Kakolimor, Barishal <br>
+              Tel: +8801755513942 (Sales), +8801755513945 <br>
+              (Service)
+            </div>
+            <div class="font-bold text-blue-400 pl-1 mt-2">
+              <a href="">See in Map</a><br>
+              <a href="">Go for Branch details</a>
+            </div>
+          </div>
+
+
+          <!-- Card 18 -->
+
+          <div class="border p-4">
+            <div class="font-bold mt-2">MYMENSINGH</div>
+            <div class="pl-1">
+              11 C.K Ghosh Road, Mymensingh <br>
+              Tel: +8801755513954 (Sales), +8801755513957 <br>
+              (Service)
+            </div>
+            <div class="font-bold text-blue-400 pl-1 mt-2">
+              <a href="">See in Map</a><br>
+              <a href="">Go for Branch details</a>
+            </div>
+          </div>
+
+
+          <!-- Card 19 -->
+
+          <div class="border p-4">
+            <div class="font-bold mt-2">SYLHET</div>
+            <div class="pl-1">
+              East Chowhatta, Azadi 111, Mirboxtula, Sylhet <br>
+              Sadar, Sylhet 3100. <br>
+              Tel: +8801755513902 (Sales), +8801313467600 <br>
+              (Service)
+            </div>
+            <div class="font-bold text-blue-400 pl-1 mt-2">
+              <a href="">See in Map</a><br>
+              <a href="">Go for Branch details</a>
+            </div>
+          </div>
+
+
+          <!-- Card 20 -->
+
+          <div class="border p-4">
+            <div class="font-bold mt-2">JASHORE</div>
+            <div class="pl-1">
+              868 R.N Road (Above SA Paribahan), Jashore <br>
+              Sadar. <br>
+              Tel: +8801755513904 (Sales), +8801313467570 <br>
+              (Service)
+            </div>
+            <div class="font-bold text-blue-400 pl-1 mt-2">
+              <a href="">See in Map</a><br>
+              <a href="">Go for Branch details</a>
+            </div>
+          </div>
+
+
+
+
+          <!-- Footer -->
+
+          <footer class="bg-black text-white w-screen ">
+            <div class="container mx-auto px-4 md:px-8 py-8">
+              <!-- Top Section -->
+              <div class="grid grid-cols-1 md:grid-cols-4 xl:flex xl:justify-between xl:items-start gap-8">
+
+                <!-- 1️⃣ Left Section: Logo + Social + Complaint -->
+                <div class="flex flex-col items-start space-y-6 xl:w-1/4">
+                  <div>
+                    <img src="imgs/Screenshot (14).png" alt="logo" class="h-20 w-auto mt-4">
+                  </div>
+
+                  <div class="flex space-x-5 px-2 py-1">
+                    <a href="#"><img src="imgs/youtube.png" alt="youtube" class="w-10 h-8"></a>
+                    <a href="#"><img src="imgs/X.png" alt="x" class="w-10 h-8"></a>
+                    <a href="#"><img src="imgs/fasboock.png" alt="facebook" class="w-10 h-8"></a>
+                    <a href="#"><img src="imgs/instagraem.png" alt="instagram" class="w-10 h-8"></a>
+                    <a href="#"><img src="imgs/in.png" alt="linkedin" class="w-10 h-8"></a>
+                  </div>
+
+                  <div>
+                    <a href="#" class="inline-block bg-[#DC3545] p-2 font-bold rounded-xl hover:underline">
+                      Complaint Box
+                    </a>
+                  </div>
+                </div>
+
+                <!-- 2️⃣ Links Section (2 columns inside) -->
+                <div class="grid grid-cols-2 gap-8 md:col-span-2 xl:w-1/2">
+                  <div class="flex flex-col space-y-2">
+                    <a href="#" class="hover:underline hover:text-[#df1a1a]">About us</a>
+                    <a href="#" class="hover:underline hover:text-[#df1a1a]">Branches</a>
+                    <a href="#" class="hover:underline hover:text-[#df1a1a]">Warranty</a>
+                    <a href="#" class="hover:underline hover:text-[#df1a1a]">Repair and Services</a>
+                    <a href="#" class="hover:underline hover:text-[#df1a1a]">EMI</a>
+                    <a href="#" class="hover:underline hover:text-[#df1a1a]">Glossary</a>
+                    <a href="#" class="hover:underline hover:text-[#df1a1a]">Blog</a>
+                    <a href="#" class="hover:underline hover:text-[#df1a1a]">New Arrival</a>
+                    <a href="#" class="hover:underline hover:text-[#df1a1a]">Store</a>
+                  </div>
+
+                  <div class="flex flex-col space-y-2 border-l-2 pl-8">
+                    <a href="#" class="hover:underline hover:text-[#df1a1a]">Order Procedure</a>
+                    <a href="#" class="hover:underline hover:text-[#df1a1a]">Return, Refund & Cancelation</a>
+                    <a href="#" class="hover:underline hover:text-[#df1a1a]">Payment Method</a>
+                    <a href="#" class="hover:underline hover:text-[#df1a1a]">Terms & Conditions</a>
+                    <a href="#" class="hover:underline hover:text-[#df1a1a]">Privacy policy</a>
+                    <a href="#" class="hover:underline hover:text-[#df1a1a]">Cookie Policy</a>
+                    <a href="#" class="hover:underline hover:text-[#df1a1a]">ডিজিটাল কমার্স নির্দেশিকা ২০২১</a>
+                    <a href="#" class="hover:underline hover:text-[#df1a1a]">Customer Service</a>
+                  </div>
+                </div>
+
+
+                <!-- 3️⃣ Contact Section -->
+
+                <div class="border-l-2 pl-8 md:col-span-1 xl:w-1/4">
+                  <div class="text-xl mb-2">Contact Us</div>
+                  <div>
+                    Head office <br>
+                    Ryans Computers Limited <br>
+                    Kusholi Bhaban, 4th Floor, 238/1 Begum Rokeya <br>
+                    Sharani, Agargaon, Dhaka-1207 <br>
+                    <div class="text-left mt-2">
+                      <a href=""><i class="fa-utility-duo fa-semibold fa-envelope"
+                          style="--fa-primary-color: #e71348; --fa-secondary-color: #181616;"></i>
+                        info@ryans.com</a><br>
+                      <a href=""><i class="fa-utility fa-semibold fa-phone" style="color: #e2e6ee;"></i> 16
+                        810,09609016810</a><br>
+                      <a href="">+8801755513900 ( Message only )</a><br>
+                      <a href=""><i class="fa-utility fa-semibold fa-location-dot" style="color: #d12f23;"></i> See in
+                        Map</a><br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- 4️⃣ Footer Paragraph Section -->
+
+              <div class="opacity-40 mt-8 border-t border-gray-700 pt-4 text-center text-sm">
+                <p class="pb-10">Prices are subject to change without any prior notice.</p>
+                <p class="pb-10">Product data used in this website is based solely on its manufacturer provided
+                  information. Authenticity and accuracy are their responsibility only.</p>
+                <p>Ryans Computers © 2025 All Rights Reserved. Designed by Ryans Computers Ltd.</p>
+              </div>
+            </div>
+          </footer>
+
+
+          <!-- <div>
+  <ul>
+    <li>
+      <a href="">System Builder</a>
+      <a href="">Offer</a>
+      <a href="">Cart</a>
+      <a href="">Compare</a>
+      <a href="">Account</a>
+
+    </li>
+  </ul>
+</div> -->
 
 
 
 
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
